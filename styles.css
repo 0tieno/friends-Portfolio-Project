@@ -20,6 +20,8 @@ img{
 
 .btns{
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -145,7 +147,6 @@ header{
 .social-icons a:hover{
     color: gold;
 }
-
 
 @media (max-width: 480px) {
     .hero-section, .btns{
