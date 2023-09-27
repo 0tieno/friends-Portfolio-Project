@@ -34,19 +34,21 @@ img{
 }
 
 .btn--empty{
-    color: #333;
+    color: #fff;
+    background-color: #333;
 }
 
 .btn--empty:hover{
-    color: #fff;
-    background-color: #333;
+    color: #333;
+    background-color: #fff;
 }
 
 .btn--full{
-    color: #fff;
-    background-color: #333;
+    color: #333;
+    background-color: #fff;
 }
 .btn--full:hover{
+    color: #fff;
     background-color: #000;
 }
 
@@ -54,19 +56,29 @@ img{
 
 header{
     min-height: 100vh;
+    background-color: #333;
+    color: #fff;
 }
 
-.logo{
+.nav-bar{
     height: 30px;
-    width: 30px;
-    background-color: blueviolet;
-    border-radius: 50%;
-    margin-top: 10px;
-    margin-left: 10px;
+    width: 30px; 
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.nav-bar .logo{
+    margin-top: 50px;
+    margin-left: 50px;
+    padding: 7px;
+    background-color: #fff;
+    color: #333;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    font-weight: bold;
+
 }
 
 .hero-section{
