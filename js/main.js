@@ -1,5 +1,5 @@
 
-const roles = ["Junior Software Developer", "Programmer", "Data Analyst", "Student"];
+const roles = ["Junior Software Developer", "Programmer", "Data Analyst", "Student."];
 const typingText = document.querySelector('.typing-text');
 
 function typeText(index, text) {

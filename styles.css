@@ -148,6 +148,8 @@ header{
     color: gold;
 }
 
+/* MEDIA QUERIES */
+
 @media (max-width: 480px) {
     .hero-section, .btns{
         display: flex;
