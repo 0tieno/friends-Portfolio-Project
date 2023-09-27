@@ -64,9 +64,15 @@ header{
     height: 30px;
     width: 30px; 
 
-    display: flex;
+     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+}
+
+.nav-bar i{
+  position: absolute;
+  right: 50px;
+  top: 30px;
 }
 
 .nav-bar .logo{
@@ -124,7 +130,7 @@ header{
 }
 
 .social-icons a{
-    color: #000;
+    color: #fff;
     padding: 10px;
     transition: 0.5s;
 }
@@ -132,4 +138,17 @@ header{
 .social-icons a:hover{
     color: gold;
 }
+
+
+@media (max-width: 480px) {
+    .hero-section, .btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
 
