@@ -1,32 +1,35 @@
-// Define an array of roles you want to display one by one
+// An array containing different roles.
 const roles = ["Junior Software Developer", "Programmer", "Data Analyst", "Student."];
 
-// Get the HTML element with the class 'typing-text' to display the text
+// Get the element with the class 'typing-text' from the HTML.
 const typingText = document.querySelector('.typing-text');
 
-// Function to simulate typing one character at a time
+// Function to simulate typing text character by character.
 function typeText(index, text) {
-    // Check if we haven't reached the end of the text
     if (index < text.length) {
-        // Add the current character to the displayed text
+        // Append the next character to the typingText element.
         typingText.textContent += text.charAt(index);
-        // Schedule the next character to be typed after a delay
         setTimeout(() => typeText(index + 1, text), 100); // Adjust typing speed (in milliseconds) here
     }
 }
 
-// Initialize the role index to start with the first role
-let roleIndex = 0;
-
-// Start typing the first role
-typeText(roleIndex, roles[roleIndex]);
-
-// Set up an interval to switch roles every 3 seconds
-setInterval(() => {
-    // Clear the displayed text
+// Function to start typing the roles one by one.
+function startTypingRoles(roleIndex) {
+    if (roleIndex >= roles.length) {
+        roleIndex = 0; // Reset to the first role if we've reached the end of the array
+    }
+    
+    // Clear any existing text in the typingText element.
     typingText.textContent = '';
-    // Move to the next role (loop back to the first role if at the end)
-    roleIndex = (roleIndex + 1) % roles.length;
-    // Start typing the next role from the beginning
+
+    // Start typing the current role from the roles array.
     typeText(0, roles[roleIndex]);
-}, 3000); // Adjust the interval (in milliseconds) to change roles
+
+    // Set a delay before moving to the next role.
+    setTimeout(() => {
+        startTypingRoles(roleIndex + 1); // Move to the next role after a delay
+    }, roles[roleIndex].length * 100 + 2000); // Adjust delay (2 seconds) between roles
+}
+
+// Start typing the roles one by one from the beginning.
+startTypingRoles(0);
