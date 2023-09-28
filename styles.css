@@ -93,7 +93,6 @@ header{
     border-radius: 50%;
     font-size: 1.2rem;
     font-weight: bold;
-
 }
 
 .hero-section{
@@ -146,7 +145,7 @@ header{
 }
 
 .social-icons a:hover{
-    color: gold;
+    color: #eece1a;
 }
 
 /* MEDIA QUERIES */
