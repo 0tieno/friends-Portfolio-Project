@@ -32,6 +32,7 @@ img{
     transition: all 0.5s;
     border: none;
     cursor: pointer;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -42,16 +43,16 @@ img{
 
 .btn--empty:hover{
     color: #333;
-    background-color: #fff;
+    background-color: #eece1a;
 }
 
 .btn--full{
     color: #333;
-    background-color: #fff;
+    background-color: #eece1a;
 }
 .btn--full:hover{
     color: #fff;
-    background-color: #000;
+    background-color: #333;
 }
 
 /* HEADER */
@@ -99,7 +100,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 70px;
     margin-top: 20vh;
 }
 
@@ -120,17 +121,17 @@ header{
 }
 
 .hero-text p{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-top: 20px;
 }
 
 .hero-text .name{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 500;
 }
 
 .hero-text h3{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
